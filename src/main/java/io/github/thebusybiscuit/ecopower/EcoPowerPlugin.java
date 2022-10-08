@@ -106,12 +106,6 @@ public class EcoPowerPlugin extends JavaPlugin implements SlimefunAddon {
                 SlimefunItems.CARBONADO, SlimefunItems.POWER_CRYSTAL, SlimefunItems.CARBONADO,
                 SlimefunItems.BLISTERING_INGOT_3, new ItemStack(Material.NETHER_STAR), SlimefunItems.BLISTERING_INGOT_3
         });
-
-        LambdaEnergySolarGenerator LambdaEnergySolarGenerator = registerLambdaEnergySolarGenerator(itemGroup, "LAMBDA_ENERGY_SOLAR_GENERATOR", "&5Reactor Solar Generator", 2048, new ItemStack[] {
-                new ItemStack(Material.PHANTOM_MEMBRANE), SlimefunItems.SOLAR_GENERATOR_4, new ItemStack(Material.PHANTOM_MEMBRANE),
-                SlimefunItems.DAMASCUS_STEEL_INGOT, SlimefunItems.CARBONADO, SlimefunItems.DAMASCUS_STEEL_INGOT,
-                SlimefunItems.COPPER_WIRE, SlimefunItems.BLISTERING_INGOT_3, SlimefunItems.COPPER_WIRE
-        });
  
         registerSolarHelmet(itemGroup, "HIGH_ENERGY_SOLAR_HELMET", "&9High-Energy Solar Helmet", 5, new ItemStack[] {
                 null, solarGenerator.getItem(), null,
@@ -120,6 +114,12 @@ public class EcoPowerPlugin extends JavaPlugin implements SlimefunAddon {
         });
         
         registerHighEnergySolarGenerator(itemGroup, "RADIANT_SOLAR_GENERATOR", "240775c3ad75763613f32f04986881bbe4eee4366d0c57f17f7c7514e2d0a77d", "&9Radiant Solar Generator", 512, new ItemStack[] {
+                lunarGenerator.getItem(), solarGenerator.getItem(), lunarGenerator.getItem(),
+                SlimefunItems.BLISTERING_INGOT_3, SlimefunItems.POWER_CRYSTAL, SlimefunItems.BLISTERING_INGOT_3,
+                SlimefunItems.REINFORCED_PLATE, SlimefunItems.CARBONADO, SlimefunItems.REINFORCED_PLATE
+        });
+
+        registerHighEnergySolarGenerator(itemGroup, "REACTOR_SOLAR_GENERATOR", "240775c3ad75763613f32f04986881bbe4eee4366d0c57f17f7c7514e2d0a77d", "&9Radiant Solar Generator", 4096, new ItemStack[] {
                 lunarGenerator.getItem(), solarGenerator.getItem(), lunarGenerator.getItem(),
                 SlimefunItems.BLISTERING_INGOT_3, SlimefunItems.POWER_CRYSTAL, SlimefunItems.BLISTERING_INGOT_3,
                 SlimefunItems.REINFORCED_PLATE, SlimefunItems.CARBONADO, SlimefunItems.REINFORCED_PLATE
@@ -168,14 +168,6 @@ public class EcoPowerPlugin extends JavaPlugin implements SlimefunAddon {
         SlimefunItemStack item = new SlimefunItemStack(id, texture, name, "", "&fThis Solar Generator runs", "&fall day and night!", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR), LoreBuilder.powerBuffer(0), LoreBuilder.powerPerSecond(power * 2));
     
         HighEnergySolarGenerator generator = new HighEnergySolarGenerator(itemGroup, item, RecipeType.ENHANCED_CRAFTING_TABLE, recipe, power);
-        generator.register(this);
-        return generator;
-    }
-
-    private LambdaEnergySolarGenerator registerLambdaEnergySolarGenerator(ItemGroup itemGroup, String id, String texture, String name, int power, ItemStack[] recipe) {
-        SlimefunItemStack item = new SlimefunItemStack(id, texture, name, "", "&fThis Solar Generator runs", "&fall day and night!", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR), LoreBuilder.powerBuffer(0), LoreBuilder.powerPerSecond(power * 2));
-    
-        LambdaEnergySolarGenerator generator = new LambdaEnergySolarGenerator(itemGroup, item, RecipeType.ENHANCED_CRAFTING_TABLE, recipe, power);
         generator.register(this);
         return generator;
     }
