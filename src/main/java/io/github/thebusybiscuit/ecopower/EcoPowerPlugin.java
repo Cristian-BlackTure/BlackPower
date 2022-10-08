@@ -37,7 +37,7 @@ import io.github.thebusybiscuit.ecopower.generators.SteamTurbineMultiblock;
 import io.github.thebusybiscuit.ecopower.generators.WindTurbine;
 import io.github.thebusybiscuit.ecopower.generators.WindTurbineMultiblock;
 import io.github.thebusybiscuit.ecopower.items.SteelRotor;
-import io.github.thebusybiscuit.ecopower.ReactorCore;
+import io.github.thebusybiscuit.ecopower.BlackBlocks;
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
