@@ -24,7 +24,6 @@ import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineFuel;
  */
 public abstract class ReactorCore extends Reactor {
 
-    @ParametersAreNonnullByDefault
     protected ReactorCore(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
     }
