@@ -69,6 +69,13 @@ public class EcoPowerPlugin extends JavaPlugin implements SlimefunAddon {
 
         SlimefunItemStack rotor = new SlimefunItemStack("STEEL_ROTOR", "c51944b488e11cda65177d5911d651282b3012665e63b8929e1b6a4744b7ca8", "&bSteel Rotor");
         
+    public static final SlimefunItemStack HYPER_PICKAXE = new SlimefunItemStack("HYPER_PICKAXE", Material.IRON_PICKAXE, "&9Hyper Pickaxe");
+
+    static {
+        HYPER_PICKAXE.addUnsafeEnchantment(Enchantment.DURABILITY, 18);
+        HYPER_PICKAXE.addUnsafeEnchantment(Enchantment.DIG_SPEED, 36);
+    }
+
         new SteelRotor(itemGroup, rotor, new ItemStack[] {
                 null, SlimefunItems.STEEL_INGOT, null,
                 SlimefunItems.STEEL_INGOT, new ItemStack(Material.IRON_BLOCK), SlimefunItems.STEEL_INGOT,
