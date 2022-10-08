@@ -1,3 +1,5 @@
+package io.github.thebusybiscuit.ecopower;
+
 import io.github.thebusybiscuit.slimefun4.implementation.items.magical.InfusedHopper;
 import io.github.thebusybiscuit.slimefun4.implementation.items.magical.InfusedMagnet;
 import io.github.thebusybiscuit.slimefun4.implementation.items.magical.KnowledgeFlask;
