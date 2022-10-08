@@ -175,7 +175,7 @@ public class EcoPowerPlugin extends JavaPlugin implements SlimefunAddon {
     private LambdaEnergySolarGenerator registerLambdaEnergySolarGenerator(ItemGroup itemGroup, String id, String texture, String name, int power, ItemStack[] recipe) {
         SlimefunItemStack item = new SlimefunItemStack(id, texture, name, "", "&fThis Solar Generator runs", "&fall day and night!", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR), LoreBuilder.powerBuffer(0), LoreBuilder.powerPerSecond(power * 2));
     
-        HighEnergySolarGenerator generator = new HighEnergySolarGenerator(itemGroup, item, RecipeType.ENHANCED_CRAFTING_TABLE, recipe, power);
+        LambdaEnergySolarGenerator generator = new LambdaEnergySolarGenerator(itemGroup, item, RecipeType.ENHANCED_CRAFTING_TABLE, recipe, power);
         generator.register(this);
         return generator;
     }
