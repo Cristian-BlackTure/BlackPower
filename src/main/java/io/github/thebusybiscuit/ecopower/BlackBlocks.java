@@ -36,6 +36,6 @@ public final class BlackBlocks {
         new ReactorCore(REACTORCORE, new ItemStack[] {
                 SlimefunItems.SILVER_INGOT, null, null,
                 SlimefunItems.SILVER_INGOT, null, null,
-                SlimefunItems.SILVER_INGOT, null, null
+                SlimefunItems.SILVER_INGOT, null, null;
         }).register(ecopower);
 }
