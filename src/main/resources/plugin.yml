@@ -1,6 +1,6 @@
-name: EcoPower
-author: TheBusyBiscuit
-description: A Slimefun Addon that focuses on renewable and climate-friendly power generation
+name: BlackPower
+author: BlackTure
+description: A SF expansion 
 main: io.github.thebusybiscuit.ecopower.EcoPowerPlugin
 website: https://github.com/TheBusyBiscuit/EcoPower
 
