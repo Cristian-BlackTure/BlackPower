@@ -119,7 +119,7 @@ public class EcoPowerPlugin extends JavaPlugin implements SlimefunAddon {
                 SlimefunItems.REINFORCED_PLATE, SlimefunItems.CARBONADO, SlimefunItems.REINFORCED_PLATE
         });
 
-        registerHighEnergySolarGenerator(itemGroup, "REACTOR_SOLAR_GENERATOR", "240775c3ad75763613f32f04986881bbe4eee4366d0c57f17f7c7514e2d0a77d", "&9Radiant Solar Generator", 4096, new ItemStack[] {
+        registerHighEnergySolarGenerator(itemGroup, "REACTOR_SOLAR_GENERATOR", "240775c3ad75763613f32f04986881bbe4eee4366d0c57f17f7c7514e2d0a77d", "&9Reactor Solar Generator", 4096, new ItemStack[] {
                 lunarGenerator.getItem(), solarGenerator.getItem(), lunarGenerator.getItem(),
                 SlimefunItems.BLISTERING_INGOT_3, SlimefunItems.POWER_CRYSTAL, SlimefunItems.BLISTERING_INGOT_3,
                 SlimefunItems.REINFORCED_PLATE, SlimefunItems.CARBONADO, SlimefunItems.REINFORCED_PLATE
