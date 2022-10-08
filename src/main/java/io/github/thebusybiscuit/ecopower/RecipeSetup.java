@@ -74,6 +74,8 @@ import io.github.thebusybiscuit.slimefun4.implementation.items.weapons.VampireBl
 import io.github.thebusybiscuit.slimefun4.utils.ColoredMaterial;
 import io.github.thebusybiscuit.slimefun4.utils.HeadTexture;
 import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
+import io.github.thebusybiscuit.ecopower.ReactorCore;
+import io.github.thebusybiscuit.ecopower.BlackBlocks;
 
 /**
  * This class holds the recipes of all items.
@@ -94,7 +96,7 @@ public final class SlimefunItemSetup {
         registeredItems = true;
         DefaultItemGroups itemGroups = new DefaultItemGroups();
 
-        new NuclearReactor(itemGroups.electricity, SlimefunItems.NUCLEAR_REACTOR, RecipeType.ENHANCED_CRAFTING_TABLE,
+        new ReactorCore(itemGroups.electricity, BlackBlocks.REACTORCORE, RecipeType.ENHANCED_CRAFTING_TABLE,
         new ItemStack[] {SlimefunItems.BLISTERING_INGOT_3, SlimefunItems.CARBONADO_EDGED_CAPACITOR, SlimefunItems.BLISTERING_INGOT_3, SlimefunItems.REINFORCED_PLATE, SlimefunItems.COOLING_UNIT, SlimefunItems.REINFORCED_PLATE, SlimefunItems.LEAD_INGOT, SlimefunItems.REINFORCED_PLATE, SlimefunItems.LEAD_INGOT}){
             
             @Override
