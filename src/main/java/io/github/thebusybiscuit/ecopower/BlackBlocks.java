@@ -32,4 +32,10 @@ public final class BlackBlocks {
             LoreBuilder.powerPerSecond(65_536),
             LoreBuilder.powerBuffer(65_536)
     );
+
+        new ReactorCore(REACTORCORE, new ItemStack[] {
+                SlimefunItems.SILVER_INGOT, null, null,
+                SlimefunItems.SILVER_INGOT, null, null,
+                SlimefunItems.SILVER_INGOT, null, null
+        }).register(ecopower);
 }
