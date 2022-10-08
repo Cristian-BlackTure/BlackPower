@@ -17,7 +17,6 @@ import io.github.thebusybiscuit.slimefun4.utils.LoreBuilder;
 /**
  * Holds the base machines and setup
  */
-@UtilityClass
 public final class BlackBlocks {
 
     public static final SlimefunItemStack REACTORCORE = new SlimefunItemStack(
