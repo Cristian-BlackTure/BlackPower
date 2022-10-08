@@ -1,4 +1,4 @@
-
+package io.github.thebusybiscuit.ecopower;
 
 import lombok.experimental.UtilityClass;
 
