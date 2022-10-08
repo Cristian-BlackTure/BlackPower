@@ -6,6 +6,7 @@ import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import io.github.thebusybiscuit.ecopower.generators.LambdaEnergySolarGenerator;
 import io.github.thebusybiscuit.ecopower.generators.HighEnergySolarGenerator;
 import io.github.thebusybiscuit.ecopower.generators.LightningReceptor;
 import io.github.thebusybiscuit.ecopower.generators.LunarGenerator;
@@ -164,6 +165,14 @@ public class EcoPowerPlugin extends JavaPlugin implements SlimefunAddon {
     }
     
     private HighEnergySolarGenerator registerHighEnergySolarGenerator(ItemGroup itemGroup, String id, String texture, String name, int power, ItemStack[] recipe) {
+        SlimefunItemStack item = new SlimefunItemStack(id, texture, name, "", "&fThis Solar Generator runs", "&fall day and night!", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR), LoreBuilder.powerBuffer(0), LoreBuilder.powerPerSecond(power * 2));
+    
+        HighEnergySolarGenerator generator = new HighEnergySolarGenerator(itemGroup, item, RecipeType.ENHANCED_CRAFTING_TABLE, recipe, power);
+        generator.register(this);
+        return generator;
+    }
+
+    private LambdaEnergySolarGenerator registerLambdaEnergySolarGenerator(ItemGroup itemGroup, String id, String texture, String name, int power, ItemStack[] recipe) {
         SlimefunItemStack item = new SlimefunItemStack(id, texture, name, "", "&fThis Solar Generator runs", "&fall day and night!", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR), LoreBuilder.powerBuffer(0), LoreBuilder.powerPerSecond(power * 2));
     
         HighEnergySolarGenerator generator = new HighEnergySolarGenerator(itemGroup, item, RecipeType.ENHANCED_CRAFTING_TABLE, recipe, power);
