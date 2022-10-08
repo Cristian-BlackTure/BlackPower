@@ -82,11 +82,11 @@ import io.github.thebusybiscuit.ecopower.BlackBlocks;
  * This is the place where all items from Slimefun are registered.
  *
  */
-public final class SlimefunItemSetup {
+public final class RecipeSetup {
 
     private static boolean registeredItems = false;
 
-    private SlimefunItemSetup() {}
+    private RecipeSetup() {}
 
     public static void setup(@Nonnull Slimefun plugin) {
         if (registeredItems) {
