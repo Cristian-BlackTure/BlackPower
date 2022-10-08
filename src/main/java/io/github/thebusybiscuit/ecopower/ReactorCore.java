@@ -1,8 +1,5 @@
 package io.github.thebusybiscuit.ecopower;
 
-import javax.annotation.Nonnull;
-import javax.annotation.ParametersAreNonnullByDefault;
-
 import org.bukkit.Location;
 import org.bukkit.inventory.ItemStack;
 
