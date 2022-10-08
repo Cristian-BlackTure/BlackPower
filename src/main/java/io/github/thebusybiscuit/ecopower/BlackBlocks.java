@@ -1,7 +1,5 @@
 package io.github.thebusybiscuit.ecopower;
 
-import lombok.experimental.UtilityClass;
-
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
