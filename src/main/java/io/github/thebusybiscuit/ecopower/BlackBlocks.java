@@ -19,3 +19,17 @@ import io.github.thebusybiscuit.slimefun4.utils.LoreBuilder;
  */
 @UtilityClass
 public final class BlackBlocks {
+
+    public static final SlimefunItemStack REACTORCORE = new SlimefunItemStack(
+            "REACTORCORE",
+            HeadTexture.NUCLEAR_REACTOR.getAsItemStack(),
+            "&fLambda Reactor",
+            "",
+            "&7Uses lasers to fuse Helium-3 pellets",
+            "&7and generate a whale a lot of energy",
+            "&7in the process makes ingot too",
+            "",
+            LoreBuilder.powerPerSecond(65_536),
+            LoreBuilder.powerBuffer(65_536)
+    );
+}
