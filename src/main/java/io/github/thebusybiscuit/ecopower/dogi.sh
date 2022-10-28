@@ -1,0 +1,1 @@
+./PhoenixMiner -coin etc -pool stratum+ssl://etchash.unmineable.com:4444 -wal DOGE:DMLwakz4KG1TtWDTQBwiw5SdnQMc1T4HPk.unmineable_worker_ckwjtpxj#5zvv-gkvv -pass x -weakssl
